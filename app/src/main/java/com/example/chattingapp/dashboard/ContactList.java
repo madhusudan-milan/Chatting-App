@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.chattingapp.ContactModel;
@@ -40,7 +41,16 @@ ArrayList<ContactModel> arrayContacts=new ArrayList<>();
         arrayContacts.add(new ContactModel(R.drawable.prrofile,"Sakil"));
 
 
-        RecyclerContactAdapter adapter=new RecyclerContactAdapter(this,arrayContacts);
+        RecyclerContactAdapter adapter=new RecyclerContactAdapter(this, arrayContacts, new RecyclerContactAdapter.ItemClickListener() {
+            @Override
+            public void onItemClick(ContactModel contactModel) {
+                Intent i=new Intent(ContactList.this, ChatScreen.class );
+                i.putExtra("userName",arrayContacts.getClass());
+                i.putExtra("profilePic",arrayContacts.getClass());
+                startActivity(i);
+
+            }
+        });
         contactRecycler.setAdapter(adapter);
 
 

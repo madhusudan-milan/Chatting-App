@@ -18,10 +18,12 @@ import java.util.ArrayList;
 
 public class RecyclerContactAdapter extends RecyclerView.Adapter<RecyclerContactAdapter.ViewHolder> {
     Context context;
+    private ItemClickListener listener;
     ArrayList<ContactModel> arrContacts;
-    public RecyclerContactAdapter(Context context, ArrayList<ContactModel> arrContacts)
+    public RecyclerContactAdapter(Context context, ArrayList<ContactModel> arrContacts,ItemClickListener listener)
     {
         this.context=context;
+        this.listener=listener;
         this.arrContacts =arrContacts;
     }
     @NonNull
@@ -39,15 +41,19 @@ public class RecyclerContactAdapter extends RecyclerView.Adapter<RecyclerContact
         holder.contactimg.setImageResource(arrContacts.get(position).img);
         holder.textName.setText(arrContacts.get(position).name);
         //this clicklistner will be redirect the contact name to the chat screen
+        int index=position;
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context, ChatScreen.class );
-                intent.putExtra("userNmae",arrContacts.getClass());
-                intent.putExtra("profilePic",arrContacts.getClass());
-                context.startActivity(intent);
+
+                listener.onItemClick(arrContacts.get(index));
+
             }
         });
+    }
+    public interface ItemClickListener{
+        void onItemClick(ContactModel contactModel);
+
     }
 
     @Override
