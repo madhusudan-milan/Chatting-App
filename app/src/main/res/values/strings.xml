@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Chatting App</string>
+    <string name="contact_image">Contact Image</string>
+    <string name="akash">Akash</string>
+    <string name="enter_your_message">Enter Your Message...</string>
+    <string name="milan">Milan</string>
+    <string name="todo">TODO</string>
 </resources>
