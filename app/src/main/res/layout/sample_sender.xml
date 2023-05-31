@@ -34,6 +34,7 @@
             android:maxWidth="270dp"
             android:minWidth="50dp"
             android:text="@string/hii_milan"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/senderTime"
             app:layout_constraintEnd_toStartOf="@+id/guidLine2"
             app:layout_constraintStart_toStartOf="parent"
