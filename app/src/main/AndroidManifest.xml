@@ -12,10 +12,10 @@
         android:theme="@style/Theme.ChattingApp"
         tools:targetApi="31">
         <activity
-            android:name=".dashboard.ChatScreen"
+            android:name=".Login_Signup.Login_Screen"
             android:exported="false" />
         <activity
-            android:name=".dashboard.ContactList"
+            android:name=".Startups.Splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +24,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".dashboard.ChatScreen"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.ContactList"
             android:exported="true">
-
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
