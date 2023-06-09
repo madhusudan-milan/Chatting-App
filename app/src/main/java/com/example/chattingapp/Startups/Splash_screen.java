@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.chattingapp.Login_Signup.Login_Screen;
+import com.example.chattingapp.Login_Signup.Getting_started;
 import com.example.chattingapp.R;
 
 public class Splash_screen extends AppCompatActivity {
@@ -19,7 +19,7 @@ public class Splash_screen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splash_screen.this, Login_Screen.class);
+                Intent i = new Intent(Splash_screen.this, Getting_started.class);
                 startActivity(i);
                 finish();
 

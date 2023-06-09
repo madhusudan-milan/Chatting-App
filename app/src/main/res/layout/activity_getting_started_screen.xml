@@ -6,17 +6,21 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@color/light_blue"
-    tools:context=".Login_Signup.Login_Screen">
+    tools:context=".Login_Signup.Getting_started">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bt_shape">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/clayout"
             android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,10 +143,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Chat with your Friends"
+                android:text="Speak With World"
                 android:paddingStart="50dp"
                 android:paddingEnd="50dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="40dp"
                 android:textStyle="bold" />
 
@@ -152,13 +156,22 @@
                 android:layout_weight="1"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="50dp"
-                android:background="@drawable/btn_get_started"
-                android:backgroundTint="@color/dark_blue"
                 android:text="Get Started"
-                />
+                android:background="@drawable/et_shape"
+                app:backgroundTint="@color/gradient_color2"
+                android:id="@+id/btn_get_started"
+                android:elevation="1dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                >
+            </Button>
 
 
         </LinearLayout>
