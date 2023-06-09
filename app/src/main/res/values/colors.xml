@@ -10,6 +10,7 @@
     <color name="white">#FFFFFFFF</color>
 
 
+
     <color name="colorPrimary">#0b6156</color>
     <color name="colorPrimaryDark">#095049</color>
     <color name="colorAccent">#03DAC5</color>
@@ -40,5 +41,10 @@
     <color name="gradient_color3">#6342bd</color>
     <color name="gradient_color4">#1c193a</color>
     <color name="gradient_color5">#c482d3</color>
+
+    <color name="blue">#6966DDED</color>
+    <color name="light_blue">#F6FFFF</color>
+    <color name="dark_blue">#0F83F2</color>
+
 
 </resources>

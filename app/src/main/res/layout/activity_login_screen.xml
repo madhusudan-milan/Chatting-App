@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/light_blue"
+    tools:context=".Login_Signup.Login_Screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clayout"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outer_circle"
+                android:contentDescription="outer circle"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintBottom_toBottomOf="@id/clayout">
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/inner_circle"
+                android:contentDescription="outer circle"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintBottom_toBottomOf="@id/clayout">
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/center_ppl"
+                android:contentDescription="outer circle"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintBottom_toBottomOf="@id/clayout">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="outer circle"
+                android:src="@drawable/ppl_1"
+                app:layout_constraintBottom_toBottomOf="@id/clayout"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintHorizontal_bias="0.234"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintVertical_bias="0.931">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="outer circle"
+                android:src="@drawable/ppl_2"
+                app:layout_constraintBottom_toBottomOf="@id/clayout"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintHorizontal_bias="0.637"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintVertical_bias="0.76">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ppl_3"
+                app:layout_constraintBottom_toBottomOf="@id/clayout"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintHorizontal_bias="0.897"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintVertical_bias="0.709">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ppl_4"
+                app:layout_constraintBottom_toBottomOf="@id/clayout"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintHorizontal_bias="0.746"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintVertical_bias="0.04">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ppl_5"
+                app:layout_constraintBottom_toBottomOf="@id/clayout"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintHorizontal_bias="0.283"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintVertical_bias="0.384">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ppl_6"
+                app:layout_constraintBottom_toBottomOf="@id/clayout"
+                app:layout_constraintEnd_toEndOf="@id/clayout"
+                app:layout_constraintHorizontal_bias="0.199"
+                app:layout_constraintStart_toStartOf="@id/clayout"
+                app:layout_constraintTop_toTopOf="@id/clayout"
+                app:layout_constraintVertical_bias="0.156">
+
+            </ImageView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Chat with your Friends"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_get_started"
+                android:backgroundTint="@color/dark_blue"
+                android:text="Get Started"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
