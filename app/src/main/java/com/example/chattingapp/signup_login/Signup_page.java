@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.chattingapp.R;
 
 public class Signup_page extends AppCompatActivity {
+
+    LottieAnimationView lottie;
 
     TextView signup,hhhh;
 
@@ -20,16 +23,16 @@ public class Signup_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
 
-        signup = findViewById(R.id.tv_donthaveaccount);
+        signup = findViewById(R.id.tv_alreadyhaveanaccount);
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Signup_page.this,Login_page.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                startActivity(i);
-                finish();
-            }
+        lottie = findViewById(R.id.lottie);
+        lottie.playAnimation();
+
+        signup.setOnClickListener(view -> {
+            Intent i = new Intent(Signup_page.this,Login_page.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            startActivity(i);
+            finish();
         });
 
 

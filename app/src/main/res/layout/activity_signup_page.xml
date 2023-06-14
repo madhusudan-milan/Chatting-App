@@ -31,7 +31,7 @@
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Sign up"
                 android:textColor="@color/white"
-                android:textSize="50sp">
+                android:textSize="40sp">
 
             </TextView>
         </LinearLayout>
@@ -42,17 +42,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:lottie_rawRes="@raw/signupanim"
+                app:lottie_loop="true"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="200dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:background="@drawable/et_shape"
-                android:backgroundTint="@color/lightGrey"
                 android:orientation="vertical">
 
                 <EditText
@@ -62,7 +68,7 @@
                     android:background="@drawable/et_shape"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:layout_marginTop="50sp"
+                    android:layout_marginTop="20sp"
                     android:layout_marginBottom="30sp"
                     android:ems="10"
                     android:padding="15sp"
@@ -110,7 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Re-Enter Password"
-                    android:layout_marginBottom="50sp"
+                    android:layout_marginBottom="20dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:inputType="textPassword"
@@ -122,16 +128,15 @@
                     android:padding="15sp">
                 </EditText>
             </LinearLayout>
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Already Have An Account !"
                 android:gravity="center"
-                android:id="@+id/tv_donthaveaccount"
+                android:id="@+id/tv_alreadyhaveanaccount"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
-                android:layout_marginStart="80dp"
-                android:layout_marginEnd="80dp"/>
+                android:textSize="20dp" />
 
 
             <Button
@@ -145,9 +150,9 @@
                 android:layout_marginStart="80dp"
                 android:layout_marginEnd="80dp"
                 android:layout_marginTop="20dp"
-                android:textSize="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                >
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold">
             </Button>
 
         </LinearLayout>
