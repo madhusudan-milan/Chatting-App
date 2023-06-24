@@ -9,7 +9,7 @@
     <gradient android:startColor="@color/gradient_color3"
         android:endColor="@color/gradient_color3"
         android:centerColor="@color/gradient_color4"
-        android:angle="140"
+        android:angle="90"
         android:centerX="@android:integer/config_longAnimTime"/>
 
 
