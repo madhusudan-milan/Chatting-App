@@ -11,4 +11,14 @@
     <string name="to_do">TODO</string>
     <string name="hii">Hii</string>
     <string name="hii_akash">Hii! Akash</string>
+    <string name="log_in">Log in</string>
+    <string name="dont_have_an_account">Dont! Have An Account</string>
+    <string name="password">Password</string>
+    <string name="username">UserName</string>
+    <string name="please">Please</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="milann">Milan</string>
+    <string name="profile">profile</string>
 </resources>

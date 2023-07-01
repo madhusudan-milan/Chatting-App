@@ -15,7 +15,7 @@
         android:background="@drawable/bg_sender"
         android:maxWidth="310dp"
         android:maxHeight="400dp"
-       android:minHeight="30dp">
+        android:minHeight="30dp">
         <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,7 +31,8 @@
             android:layout_marginTop="4dp"
             android:layout_marginBottom="3dp"
             android:inputType="textLongMessage|textImeMultiLine"
-            android:maxWidth="270dp"
+            android:maxWidth="200dp"
+            android:maxHeight="400dp"
             android:minWidth="50dp"
             android:text="@string/hii_milan"
             android:textSize="20sp"

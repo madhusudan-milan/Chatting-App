@@ -11,21 +11,22 @@
     android:maxWidth="310dp"
     android:maxHeight="400dp"
     android:minHeight="30dp">
+
     <TextView
+        android:id="@+id/reciverText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/reciverText"
         android:layout_margin="8dp"
         android:inputType="textLongMessage|textImeMultiLine"
         android:maxWidth="270dp"
         android:minWidth="50dp"
+
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@id/reciverTime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/guidLine"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        />
+        app:layout_constraintVertical_bias="1.0" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="#1c193a"
-    tools:context=".MainActivity">
+    tools:context=".dashboard.ChatScreen">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

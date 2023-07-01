@@ -12,29 +12,29 @@
         android:theme="@style/Theme.ChattingApp"
         tools:targetApi="31" >
         <activity
-            android:name=".dashboard.Home_main_screen"
-            android:exported="false" />
+            android:name=".dashboard.Home_Main_Screen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".signup_login.Signup_page"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".Login_Signup.Getting_started"
             android:exported="false" />
         <activity
             android:name=".signup_login.Login_page"
-            android:exported="false" />
-        <activity
-            android:name=".Startups.Splash_screen"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".Startups.Splash_screen"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
