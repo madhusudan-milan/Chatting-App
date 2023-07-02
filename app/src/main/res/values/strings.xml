@@ -21,4 +21,5 @@
     <string name="group_chat">Group Chat</string>
     <string name="milann">Milan</string>
     <string name="profile">profile</string>
+    <string name="textview">TextView</string>
 </resources>

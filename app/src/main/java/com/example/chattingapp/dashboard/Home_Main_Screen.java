@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.chattingapp.Adapter.FragmentAdapter;
+import com.example.chattingapp.GroupChatActivity;
 import com.example.chattingapp.Model.ContactModel;
 import com.example.chattingapp.R;
 import com.example.chattingapp.databinding.ActivityHomeMainScreenBinding;
@@ -70,7 +71,8 @@ public class Home_Main_Screen extends AppCompatActivity {
                 Toast.makeText(this, "Profile is Selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.groupchat:
-                Toast.makeText(this, "Group Chat Selected", Toast.LENGTH_SHORT).show();
+                 Intent intent1 =new Intent(Home_Main_Screen.this, GroupChatActivity.class);
+                 startActivity(intent1);
                 break;
             case R.id.logout:
                mAuth.signOut();

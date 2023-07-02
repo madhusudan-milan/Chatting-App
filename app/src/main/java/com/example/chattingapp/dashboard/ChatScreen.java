@@ -54,7 +54,7 @@ public class ChatScreen extends AppCompatActivity {
         binding.backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(ChatScreen.this,ContactList.class);
+                Intent intent=new Intent(ChatScreen.this,Home_Main_Screen.class);
                 startActivity(intent);
                 finish();
             }
@@ -70,7 +70,7 @@ public class ChatScreen extends AppCompatActivity {
         final  String senderRoom = senderId + reciverId;//identify which one is sender or reciver
         final String reviverRoom = reciverId + senderId;
 
-        database.getReference().child("chats")
+        database.getReference().child("chats")//creating new node in firebase
                         .child(senderRoom)
                                 .addValueEventListener(new ValueEventListener() {
                                     @Override

@@ -17,10 +17,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:inputType="textLongMessage|textImeMultiLine"
-        android:maxWidth="270dp"
+        android:inputType="textLongMessage|textMultiLine"
+        android:maxWidth="300dp"
         android:minWidth="50dp"
-
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@id/reciverTime"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,5 +43,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/guidLine"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="12dp"/>
+        app:layout_constraintGuide_begin="14dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
