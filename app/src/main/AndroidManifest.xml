@@ -12,10 +12,10 @@
         android:theme="@style/Theme.ChattingApp"
         tools:targetApi="31">
         <activity
-            android:name=".GroupChatActivity"
-            android:exported="false" />
+            android:name=".profile.profile_edit"
+            android:exported="true" />
         <activity
-            android:name=".dashboard.Home_Main_Screen"
+            android:name=".profile.profile_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,14 +24,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".dashboard.Home_Main_Screen"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".signup_login.Signup_page"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Login_Signup.Getting_started"
             android:exported="false" />
         <activity
             android:name=".signup_login.Login_page"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Startups.Splash_screen"
             android:exported="false" />
