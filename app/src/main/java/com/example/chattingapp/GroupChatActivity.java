@@ -28,7 +28,7 @@ import java.util.Date;
 public class GroupChatActivity extends AppCompatActivity {
     ActivityChatScreenBinding binding;
 
-    FirebaseDatabase database;
+//    FirebaseDatabase database;
 
 
     @Override
@@ -91,7 +91,7 @@ public class GroupChatActivity extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Toast.makeText(GroupChatActivity.this,"Hello",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(GroupChatActivity.this,"",Toast.LENGTH_SHORT).show();
                             }
                         });
             }

@@ -71,11 +71,11 @@ public class Home_Main_Screen extends AppCompatActivity {
                 Toast.makeText(this, "Profile is Selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.groupchat:
-                 Intent intent1 =new Intent(Home_Main_Screen.this, GroupChatActivity.class);
-                 startActivity(intent1);
+                Intent intent1 =new Intent(Home_Main_Screen.this, GroupChatActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.logout:
-               mAuth.signOut();
+                mAuth.signOut();
                 Intent intent=new Intent(Home_Main_Screen.this, Login_page.class);
                 startActivity(intent);
                 break;

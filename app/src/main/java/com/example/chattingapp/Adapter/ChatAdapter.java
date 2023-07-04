@@ -19,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Objects;
 
 public class ChatAdapter extends RecyclerView.Adapter {
     ArrayList<MessageModel> messageModels;
@@ -55,7 +56,7 @@ public class ChatAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemViewType(int position) {
 
-        if (messageModels.get(position).getuId().equals(FirebaseAuth.getInstance().getUid())){
+        if (Objects.equals(messageModels.get(position).getuId(), FirebaseAuth.getInstance().getUid())){
             return SENDER_VIEW_TYPE;
         }
         else {
