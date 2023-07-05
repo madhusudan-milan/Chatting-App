@@ -45,7 +45,7 @@ public class Home_Main_Screen extends AppCompatActivity {
 
 
         String userName=getIntent().getStringExtra("userName");
-        binding.tvUserName.setText(userName);
+        getSupportActionBar().setTitle(userName);
 
         binding.viewPager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
         binding.tabLayout.setupWithViewPager(binding.viewPager);
