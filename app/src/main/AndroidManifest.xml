@@ -12,10 +12,10 @@
         android:theme="@style/Theme.ChattingApp"
         tools:targetApi="31">
         <activity
-            android:name=".profile.profile_edit"
+            android:name=".profile.Profile_edit"
             android:exported="true" />
         <activity
-            android:name=".profile.profile_page"
+            android:name=".profile.Profile_page"
             android:exported="true">
 
         </activity>
@@ -52,6 +52,10 @@
             android:name=".dashboard.ContactList"
             android:exported="true" />
         <activity android:name=".GroupChatActivity"
+            android:exported="true"/>
+        <activity android:name=".profile.Profile_edit"
+            android:exported="true"/>
+        <activity android:name=".profile.Profile_page"
             android:exported="true"/>
     </application>
 

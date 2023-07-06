@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_fb_like" />
+    <drawable name="ic_fb_love" />
+    <drawable name="ic_fb_laugh" />
+    <drawable name="ic_fb_wow" />
+    <drawable name="ic_fb_sad" />
+    <drawable name="ic_fb_angry" />
+</resources>

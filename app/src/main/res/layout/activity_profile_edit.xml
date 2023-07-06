@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup_login.Signup_page"
+    tools:context=".profile.Profile_edit"
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/bt_shape"
@@ -43,11 +43,13 @@
 
 
             <de.hdodenhof.circleimageview.CircleImageView
+
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/profilepic"
                 android:id="@+id/profilePic"
                 app:civ_border_width="2dp"
+
                 app:civ_border_color="@color/black"/>
 
             <ImageView
@@ -90,18 +92,6 @@
             </EditText>
 
 
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginTop="50dp"
-                android:inputType="textEmailAddress"
-                android:hint="Email"
-                android:textSize="20dp">
-            </EditText>
 
         </LinearLayout>
 
